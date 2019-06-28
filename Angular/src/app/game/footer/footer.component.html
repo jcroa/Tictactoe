@@ -1,3 +1,4 @@
 <p class="footer">
-  <span class="name">Number of movements:</span><span class="value">{{ (_state$ | async).movementCount }}</span>
+  <span class="name">Number of movements:</span><span class="value">{{ ( _stateService.state$ | async).movementCount }}</span>
 </p>
+<button class="reset" (click)="_handleResetClick()">Reset</button>

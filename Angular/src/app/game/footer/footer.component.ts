@@ -10,13 +10,18 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 })
 export class FooterComponent implements OnInit {
 
-  private _state$: BehaviorSubject<State>;
+  private _stateService: StateService;
 
   constructor(stateService: StateService) { 
-  	this._state$ = stateService.state$;
+    this._stateService = stateService;
   }
 
   ngOnInit() {
+  }
+
+  _handleResetClick() {
+    console.log('Click on reset');
+    this._stateService.reset();
   }
 
 }
