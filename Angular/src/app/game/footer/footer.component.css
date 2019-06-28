@@ -1,0 +1,12 @@
+.footer {
+    font-size: 1.2rem;
+}
+.footer span.name {
+    color: #404040;
+    font-weight: bold;
+}
+.footer .value {
+    color: 101050;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
