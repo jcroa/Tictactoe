@@ -1,0 +1,9 @@
+p {
+    font-size: 1.2rem;
+}
+.no-winner {
+   color: #a00000;
+}
+.yes-winner {
+    color: #30a030;
+}
