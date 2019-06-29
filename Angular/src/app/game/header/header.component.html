@@ -1,8 +1,8 @@
-<p *ngIf="_stateService.state.movementCount < 9">
+<p *ngIf="_stateService.state.movementCount < 9 || _stateService.state.winner">
   <span *ngIf="!_stateService.state.winner">Turn of  </span>
   <span class="yes-winner" *ngIf="_stateService.state.winner">There is a winner: </span>
   {{ ( _state$ | async).winner == 'PLAYERX' ? "Player 1 - Xs" : "Player 2 - 0s" }}
 </p>
-<p class="no-winner" *ngIf="_stateService.state.movementCount == 9">
+<p class="no-winner" *ngIf="_stateService.state.movementCount == 9 && !_stateService.state.winner">
   No movements. No winner
 </p>
